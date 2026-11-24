@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblio-Audiophile-CD — fiches des meilleurs CD</title>
+  <meta name="description" content="Fiches récapitulatives des meilleurs albums CD du point de vue audiophile et interprétation : références, score DR, morceaux remarquables.">
+  <link rel="stylesheet" href="css/style.css?v=1.0.0">
+</head>
+<body>
+  <header>
+    <h1>💿 Biblio-Audiophile-CD</h1>
+    <p class="sous-titre">Fiches récapitulatives des meilleurs albums CD — pressage, dynamique, interprétation</p>
+  </header>
+
+  <nav class="barre-recherche">
+    <div class="ligne-recherche">
+      <input type="search" id="champ-recherche" placeholder="Rechercher : référence catalogue, code EAN, morceau, compositeur, artiste…" autocomplete="off">
+      <select id="mode-recherche" aria-label="Mode de recherche">
+        <option value="tout">Tout</option>
+        <option value="catalogue">Réf. catalogue</option>
+        <option value="ean">Code EAN</option>
+        <option value="morceau">Morceau</option>
+        <option value="compositeur">Compositeur</option>
+        <option value="artiste">Artiste / album</option>
+      </select>
+    </div>
+    <div class="onglets-index" id="onglets-index">
+      <button data-index="catalogue">📇 Index des réf. catalogue</button>
+      <button data-index="ean">🔢 Index des codes EAN</button>
+      <button data-index="morceaux">🎵 Index des morceaux</button>
+      <button data-index="compositeurs">🎼 Index des compositeurs</button>
+    </div>
+    <p class="stats" id="stats"></p>
+  </nav>
+
+  <main id="zone-principale">
+    <div id="liste-index"></div>
+    <div id="liste-fiches"></div>
+  </main>
+
+  <footer>
+    <p id="app-version"></p>
+    <p class="credits">Application suggérée par Alain et créée par son ami Vibe Code</p>
+    <p class="note-source">Scores DR approximatifs, d’après la Dynamic Range Database (ils varient selon le pressage) et références à recouper avec vos exemplaires.</p>
+  </footer>
+
+  <script src="js/data.js?v=1.0.0"></script>
+  <script src="js/app.js?v=1.0.0"></script>
+</body>
+</html>

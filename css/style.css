@@ -1,0 +1,283 @@
+/* style.css — Biblio-Audiophile-CD : thème sombre « audiophile », accent doré */
+
+:root {
+  --fond: #14161a;
+  --fond-2: #1c1f25;
+  --fond-3: #23272f;
+  --bordure: #343945;
+  --texte: #e8e6e1;
+  --texte-doux: #a8a49a;
+  --or: #d4af37;
+  --or-clair: #e8c96a;
+  --vert: #4caf6d;
+  --rouge: #c4574f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.55;
+}
+
+header {
+  text-align: center;
+  padding: 28px 16px 18px;
+  border-bottom: 1px solid var(--bordure);
+  background: linear-gradient(180deg, var(--fond-2), var(--fond));
+}
+header h1 {
+  margin: 0;
+  font-size: 1.9rem;
+  letter-spacing: 0.04em;
+  color: var(--or);
+}
+header .sous-titre {
+  margin: 6px 0 0;
+  color: var(--texte-doux);
+  font-style: italic;
+}
+
+/* ---------- Barre de recherche ---------- */
+.barre-recherche {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--fond-2);
+  border-bottom: 1px solid var(--bordure);
+  padding: 12px 16px;
+}
+.ligne-recherche {
+  display: flex;
+  gap: 8px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+#champ-recherche {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid var(--bordure);
+  border-radius: 8px;
+  background: var(--fond);
+  color: var(--texte);
+  font-size: 1rem;
+  font-family: inherit;
+}
+#champ-recherche:focus {
+  outline: none;
+  border-color: var(--or);
+}
+#mode-recherche {
+  padding: 10px;
+  border: 1px solid var(--bordure);
+  border-radius: 8px;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: inherit;
+}
+
+.onglets-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.onglets-index button {
+  padding: 8px 14px;
+  border: 1px solid var(--bordure);
+  border-radius: 20px;
+  background: var(--fond);
+  color: var(--texte);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+.onglets-index button:hover { border-color: var(--or); }
+.onglets-index button.actif {
+  background: var(--or);
+  color: #14161a;
+  border-color: var(--or);
+  font-weight: bold;
+}
+
+.stats {
+  text-align: center;
+  color: var(--texte-doux);
+  font-size: 0.88rem;
+  margin: 8px 0 0;
+}
+
+/* ---------- Panneau d’index ---------- */
+.panneau-index {
+  max-width: 900px;
+  margin: 10px auto 0;
+  background: var(--fond-3);
+  border: 1px solid var(--bordure);
+  border-radius: 10px;
+  padding: 12px;
+}
+.titre-index {
+  margin: 0 0 10px;
+  color: var(--or);
+  font-weight: bold;
+}
+.grille-index {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 6px;
+}
+.item-index {
+  text-align: left;
+  padding: 7px 10px;
+  border: 1px solid var(--bordure);
+  border-radius: 6px;
+  background: var(--fond);
+  color: var(--texte);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.88rem;
+  word-break: break-word;
+}
+.item-index:hover { border-color: var(--or); color: var(--or-clair); }
+.item-index .compte { color: var(--texte-doux); }
+.lien {
+  background: none;
+  border: none;
+  color: var(--or-clair);
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+/* ---------- Zone principale et fiches ---------- */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.resultat-info {
+  color: var(--or-clair);
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+}
+.aucun {
+  color: var(--texte-doux);
+  font-style: italic;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.fiche {
+  background: var(--fond-2);
+  border: 1px solid var(--bordure);
+  border-radius: 12px;
+  margin-bottom: 22px;
+  padding: 18px 20px;
+}
+.fiche-tete { border-bottom: 1px solid var(--bordure); padding-bottom: 8px; }
+.fiche h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  color: var(--or-clair);
+}
+.fiche .metas {
+  margin: 4px 0 0;
+  color: var(--texte-doux);
+  font-size: 0.9rem;
+}
+.fiche .resume { margin: 12px 0; }
+
+.partie { margin-top: 14px; }
+.partie h3 {
+  font-size: 1.02rem;
+  color: var(--or);
+  border-left: 3px solid var(--or);
+  padding-left: 8px;
+  margin: 0 0 8px;
+}
+
+/* Tableau des références (partie 1) */
+.refs {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.93rem;
+}
+.refs th, .refs td {
+  border: 1px solid var(--bordure);
+  padding: 7px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.refs th {
+  width: 170px;
+  background: var(--fond-3);
+  color: var(--or-clair);
+  font-weight: normal;
+  white-space: nowrap;
+}
+.refs code {
+  background: var(--fond);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.indispo { color: var(--texte-doux); font-style: italic; }
+
+.badge-dr {
+  display: inline-block;
+  background: var(--or);
+  color: #14161a;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 2px 9px;
+  font-size: 0.88rem;
+  letter-spacing: 0.03em;
+}
+.dr-note { color: var(--texte-doux); font-size: 0.85rem; }
+
+.identification { margin: 10px 0 0; padding-left: 22px; }
+.identification li { margin-bottom: 5px; }
+
+/* Partie 2 : pistes remarquables */
+.pistes { margin: 8px 0 0; padding-left: 0; list-style: none; counter-reset: piste; }
+.pistes li {
+  counter-increment: piste;
+  padding: 8px 10px 8px 38px;
+  position: relative;
+  border-bottom: 1px dashed var(--bordure);
+}
+.pistes li:last-child { border-bottom: none; }
+.pistes li::before {
+  content: counter(piste, decimal-leading-zero);
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  color: var(--or);
+  font-family: "Courier New", monospace;
+  font-size: 0.85rem;
+}
+.comp { color: var(--or-clair); font-size: 0.9rem; }
+.remarque { color: var(--texte-doux); font-size: 0.93rem; }
+
+/* ---------- Pied de page ---------- */
+footer {
+  text-align: center;
+  border-top: 1px solid var(--bordure);
+  padding: 18px 16px 26px;
+  margin-top: 20px;
+}
+footer p { margin: 5px 0; }
+#app-version { color: var(--or); font-size: 0.9rem; }
+.credits { color: var(--texte-doux); font-size: 0.85rem; }
+.note-source { color: var(--texte-doux); font-size: 0.8rem; font-style: italic; }
+
+@media (max-width: 600px) {
+  .ligne-recherche { flex-direction: column; }
+  .refs th { width: auto; }
+  .fiche { padding: 14px; }
+}
