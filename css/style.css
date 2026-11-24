@@ -79,33 +79,6 @@ header .sous-titre {
   font-family: inherit;
 }
 
-.ligne-index {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  max-width: 900px;
-  margin: 10px auto 0;
-}
-.etiquette-index {
-  color: var(--texte-doux);
-  font-size: 0.92rem;
-  white-space: nowrap;
-}
-#choix-index {
-  flex: 1;
-  padding: 9px 10px;
-  border: 1px solid var(--bordure);
-  border-radius: 8px;
-  background: var(--fond);
-  color: var(--texte);
-  font-family: inherit;
-  font-size: 0.95rem;
-}
-#choix-index:focus {
-  outline: none;
-  border-color: var(--or);
-}
-
 .stats {
   text-align: center;
   color: var(--texte-doux);
@@ -113,39 +86,6 @@ header .sous-titre {
   margin: 8px 0 0;
 }
 
-/* ---------- Panneau d’index ---------- */
-.panneau-index {
-  max-width: 900px;
-  margin: 10px auto 0;
-  background: var(--fond-3);
-  border: 1px solid var(--bordure);
-  border-radius: 10px;
-  padding: 12px;
-}
-.titre-index {
-  margin: 0 0 10px;
-  color: var(--or);
-  font-weight: bold;
-}
-.grille-index {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 6px;
-}
-.item-index {
-  text-align: left;
-  padding: 7px 10px;
-  border: 1px solid var(--bordure);
-  border-radius: 6px;
-  background: var(--fond);
-  color: var(--texte);
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 0.88rem;
-  word-break: break-word;
-}
-.item-index:hover { border-color: var(--or); color: var(--or-clair); }
-.item-index .compte { color: var(--texte-doux); }
 .lien {
   background: none;
   border: none;
@@ -280,10 +220,6 @@ footer p { margin: 5px 0; }
 
 @media (max-width: 600px) {
   .ligne-recherche { flex-direction: column; }
-  .ligne-index { flex-direction: column; align-items: stretch; }
-  .etiquette-index { display: none; }
-  .panneau-index { max-height: 45vh; overflow: auto; }
-  .grille-index { grid-template-columns: 1fr; }
   .refs th { width: auto; }
   .fiche { padding: 14px; }
 }

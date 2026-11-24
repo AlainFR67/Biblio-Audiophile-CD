@@ -13,10 +13,6 @@ function norm(s) {
   return String(s || "").toLowerCase().trim();
 }
 
-/* ---------- État ---------- */
-let indexCourant = null;
-let modePrecedent = "";
-
 /* ---------- Recherche ---------- */
 function ficheCorrespond(a, mode, q) {
   const nq = norm(q);
@@ -120,80 +116,6 @@ function ficheHTML(a) {
   return html;
 }
 
-/* ---------- Index ---------- */
-function construireIndex() {
-  const cat = [], eans = [], morceaux = [], doughs = [];
-  const compSet = {}, titresSet = {};
-  ALBUMS.forEach(function (a) {
-    cat.push({ valeur: a.version.catalogue, fiches: [a.id] });
-    if (a.version.ean !== "—") {
-      eans.push({ valeur: a.version.ean, fiches: [a.id] });
-    }
-    a.pistes.forEach(function (p) {
-      const cle = norm(p.titre);
-      if (!titresSet[cle]) { titresSet[cle] = { valeur: p.titre, fiches: [] }; morceaux.push(titresSet[cle]); }
-      titresSet[cle].fiches.push(a.id);
-      const cleC = norm(p.compositeur);
-      if (!compSet[cleC]) { compSet[cleC] = { valeur: p.compositeur, fiches: [] }; doughs.push(compSet[cleC]); }
-      compSet[cleC].fiches.push(a.id);
-    });
-  });
-  const tri = function (x, y) { return x.valeur.localeCompare(y.valeur, "fr"); };
-  cat.sort(tri); eans.sort(tri); morceaux.sort(tri); doughs.sort(tri);
-  return { catalogue: cat, ean: eans, morceaux: morceaux, compositeurs: doughs };
-}
-
-const INDEXES = construireIndex();
-
-function renderIndex(nom) {
-  const zone = document.getElementById("liste-index");
-  if (!nom || indexCourant === nom) {
-    indexCourant = null;
-    zone.innerHTML = "";
-  } else {
-    indexCourant = nom;
-    const items = INDEXES[nom] || [];
-    const titres = {
-      catalogue: "Index des références catalogue", ean: "Index des codes EAN",
-      morceaux: "Index des morceaux", compositeurs: "Index des compositeurs"
-    };
-    zone.innerHTML = "<div class=\"panneau-index\">" +
-      "<p class=\"titre-index\">" + titres[nom] +
-      " <button type=\"button\" id=\"fermer-index\" class=\"lien\">✕ fermer</button></p>" +
-      "<div class=\"grille-index\">" +
-        items.map(function (it) {
-          const nb = it.fiches.length;
-          return "<button type=\"button\" class=\"item-index\" data-fiches=\"" + esc(it.fiches.join(",")) + "\">" +
-            esc(it.valeur) + " <span class=\"compte\">(" + nb + ")</span></button>";
-        }).join("") +
-      "</div></div>";
-    const fermer = document.getElementById("fermer-index");
-    if (fermer) fermer.addEventListener("click", function () { renderIndex(null); });
-    Array.prototype.forEach.call(zone.querySelectorAll(".item-index"), function (btn) {
-      btn.addEventListener("click", function () {
-        const ids = btn.getAttribute("data-fiches").split(",");
-        filtrerParIds(ids);
-      });
-    });
-  }
-  const selIndex = document.getElementById("choix-index");
-  if (selIndex && selIndex.value !== (nom || "")) selIndex.value = nom || "";
-}
-
-function filtrerParIds(ids) {
-  const champ = document.getElementById("champ-recherche");
-  const zone = document.getElementById("liste-fiches");
-  champ.value = "";
-  const matches = ALBUMS.filter(function (a) { return ids.indexOf(a.id) !== -1; });
-  zone.innerHTML = "<p class=\"resultat-info\">" + matches.length + " fiche" +
-    (matches.length > 1 ? "s" : "") + " sélectionnée" + (matches.length > 1 ? "s" : "") +
-    " depuis l’index — <button type=\"button\" id=\"btn-effacer\" class=\"lien\">tout afficher</button></p>" +
-    matches.map(ficheHTML).join("");
-  const b = document.getElementById("btn-effacer");
-  if (b) b.addEventListener("click", function () { renderFiches(); });
-  document.getElementById("zone-principale").scrollIntoView({ behavior: "smooth" });
-}
-
 /* ---------- Statistiques ---------- */
 function majStatsAvec(matches) {
   const el = document.getElementById("stats");
@@ -225,11 +147,6 @@ function init() {
 
   document.getElementById("champ-recherche").addEventListener("input", renderFiches);
   document.getElementById("mode-recherche").addEventListener("change", renderFiches);
-
-  const selIndex = document.getElementById("choix-index");
-  selIndex.addEventListener("change", function () {
-    renderIndex(selIndex.value || null);
-  });
 
   majStatsAvec(ALBUMS);
 }
