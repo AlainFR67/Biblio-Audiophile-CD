@@ -182,6 +182,26 @@ main {
 }
 .dr-note { color: var(--texte-doux); font-size: 0.85rem; }
 
+.anecdote {
+  margin: 10px 0 0;
+  background: var(--fond-3);
+  border-left: 3px solid var(--or);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-style: italic;
+  font-size: 0.93rem;
+  color: var(--texte);
+}
+.anecdote-titre {
+  display: block;
+  color: var(--or);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 3px;
+}
+
 .identification { margin: 10px 0 0; padding-left: 22px; }
 .identification li { margin-bottom: 5px; }
 

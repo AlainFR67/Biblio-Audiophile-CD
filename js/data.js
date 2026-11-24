@@ -13,6 +13,7 @@ const ALBUMS = [
     annee: "1987",
     genre: "Pop / folk audiophile",
     resume: "L’album d’ouverture de la plupart des démonstrations audiophiles depuis 1987 : les reprises de Leonard Cohen chantées au plus près, guitares douces, chœurs parfaits. Une référence absolue de présence vocale et de grave tenu.",
+    anecdote: "Choriste de Leonard Cohen pendant près de six ans, Jennifer Warnes a d’abord été « la voix » de ses tournées avant de lui offrir en 1986 ce disque-hommage devenu un canon audiophile. Paradoxe savoureux : son « Famous Blue Raincoat » a fait connaître la chanson à bien plus d’auditeurs que la version originale de Cohen.",
     version: { label: "Private Music", catalogue: "82193-2 (CD original US, 1987)", ean: "—", dr: 13, drNote: "Édition originale Private Music ; les remasters ultérieurs (Talking Elephant UK, ATR Master) varient de 12 à 14 selon les mesures de la Dynamic Range Database." },
     identification: [
       "Référence 82193-2 imprimée au dos du boîtier et sur la face interne du disque (édition originale US).",
@@ -21,11 +22,11 @@ const ALBUMS = [
       "Recopier la zone interne (matrix) et le code SID pour identifier votre exemplaire avec certitude.",
     ],
     pistes: [
-      { titre: "Bird on a Wire (The Introduction)", compositeur: "Leonard Cohen", remarque: "Ouverture idéale pour régler le grave : guitare au centre, voix légèrement à droite, réverbération longue mais propre." },
-      { titre: "Famous Blue Raincoat", compositeur: "Leonard Cohen", remarque: "Voix intimiste, piano limpide ; l’espace autour de la voix est un test exigeant du médium." },
-      { titre: "Joan of Arc", compositeur: "Leonard Cohen", remarque: "Chœurs et montée dramatique : la dynamique finale montre la réserve de puissance du système." },
-      { titre: "Song of Bernadette", compositeur: "Leonard Cohen, Jennifer Warnes, Bill Elliott", remarque: "Image stéréo très large et voix suspendues : test classique de scène sonore." },
-      { titre: "A Singer Must Die", compositeur: "Leonard Cohen", remarque: "Enregistrement le plus dépouillé de l’album : micros au plus près, souffle quasi nul." },
+      { titre: "Bird on a Wire (The Introduction)", compositeur: "Leonard Cohen", remarque: "L’introduction pose le décor acoustique : la voix de Warnes arrive en avant-plan, avec l’air de studio audible autour d’elle. Écoutez la respiration avant la première phrase — un bon pressage laisse la machine humaine respirer." },
+      { titre: "Famous Blue Raincoat", compositeur: "Leonard Cohen", remarque: "Le cœur du disque : cordes en nappe derrière la voix, écho de salle discret mais bien présent. Un test de profondeur d’image vocale — la chanteuse doit sembler ancrée dans la pièce, pas collée aux enceintes." },
+      { titre: "Joan of Arc", compositeur: "Leonard Cohen", remarque: "Le grand morceau dramatique : Warnes joue les deux rôles (Jeanne et le feu qui lui parle), avec un chœur en appui. Les voix superposées créent une vraie mise en espace : chaque strate doit rester distincte même à volume raisonnable." },
+      { titre: "Song of Bernadette", compositeur: "Leonard Cohen, Jennifer Warnes, Bill Elliott", remarque: "Coécrit par la chanteuse elle-même, sans doute la prise la plus nue de l’album : voix, piano discret, cordes à peine suggérées. C’est ici que se juge la pureté du médium et le silence de fond du pressage." },
+      { titre: "A Singer Must Die", compositeur: "Leonard Cohen", remarque: "Presque un lied : voix très proche, cordes graves en appui. Le contraste entre l’intimité vocale et l’étagement orchestral en fait une belle leçon de mixage à l’ancienne." },
     ],
   },
   {
@@ -35,6 +36,7 @@ const ALBUMS = [
     annee: "1985 (CD dès 1985)",
     genre: "Rock",
     resume: "L’un des premiers albums 100 % numériques (DDD) et l’un des premiers grands succès du CD, mixé par Chuck Ainlay aux studios Air de Montserrat. Le CD original Vertigo reste la référence du liseré de grave et de l’ampleur stéréophonique.",
+    anecdote: "Enregistré à l’automne 1984 aux studios Air de George Martin à Montserrat, dans les Caraïbes, l’album est devenu le symbole du CD naissant : l’un des premiers disques à dépasser le million d’exemplaires dans ce format, au point d’être pendant des années le CD de démonstration des vendeurs hi-fi. Le vidéoclip parodique de « Money for Nothing », énorme tube sur une chaîne alors naissante nommée MTV, a fini le travail.",
     version: { label: "Vertigo (PolyGram)", catalogue: "824 499-2 (CD original international, 1985)", ean: "042282449923", dr: 12, drNote: "Score DR de l’original ; le remaster 1996 est légèrement moins bon, le pressage 1985 reste le plus spatial." },
     identification: [
       "Référence 824 499-2 sur le boîtier et la face interne du disque ; première presse « Made in W.-Germany » (usine PolyGram Hanover), sans code SID.",
@@ -43,11 +45,14 @@ const ALBUMS = [
       "Les rééditions récentes portent des codes SID : les repérer pour dater l’exemplaire.",
     ],
     pistes: [
-      { titre: "So Far Away", compositeur: "Mark Knopfler", remarque: "Guitare au centre-gauche, batterie bien derrière ; test de cohérence avant-arrière de la scène." },
-      { titre: "Your Latest Trick", compositeur: "Mark Knopfler", remarque: "Saxophone baryton nocturne, ambiance réverbérée profonde ; un grand test de profondeur de scène." },
-      { titre: "Why Worry", compositeur: "Mark Knopfler", remarque: "Piano et guitare nylon d’une douceur extrême ; idéal pour juger le souffle et le bruit de fond de la chaîne." },
-      { titre: "Brothers in Arms", compositeur: "Mark Knopfler", remarque: "La montée finale et les toms : un classique absolu des épreuves de dynamique et de grave profond." },
-      { titre: "The Man’s Too Strong", compositeur: "Mark Knopfler", remarque: "Accordéon et chœurs très élargis ; l’un des mixages les plus étalés de l’album." },
+      { titre: "So Far Away", compositeur: "Mark Knopfler", remarque: "L’ouverture bat à peine : batterie lointaine, voix posée en retrait. Écoutez comment la réverbération installe une pièce autour de la voix — si l’image reste floue, c’est la chaîne qui brouille." },
+      { titre: "Ride Across the River", compositeur: "Mark Knopfler", remarque: "Ambiance percussions : didgeridoo de synthèse, guimbarde, basse profondément ancrée. Le moment où le disque joue les graves jusqu’au plancher : un test de tenue sans gonflement." },
+      { titre: "Your Latest Trick", compositeur: "Mark Knopfler", remarque: "Le solo de saxophone, enregistré tout près avec le souffle audible, plane au-dessus d’une électronique étale. Un bon pressage le garde rond sans être huileux, avec des cymbales cristallines au fond." },
+      { titre: "Why Worry", compositeur: "Mark Knopfler", remarque: "Le morceau le plus calme de l’album : piano feutré et guitare nylon. À volume faible, il révèle le plancher de bruit de la chaîne — un beau pressage reste noir entre les notes." },
+      { titre: "The Man’s Too Strong", compositeur: "Mark Knopfler", remarque: "Guitare acoustique en double piste, cordes synthétiques à l’arrière-plan. Écoutez les attaques de médiator et les respirations : la définition doit rester intacte même dans les passages denses." },
+      { titre: "Brothers in Arms", compositeur: "Mark Knopfler", remarque: "LE morceau-démonstration : batterie massive, guitare solo glissant dans la réverbération, final qui monte très fort. Écoutez le silence qui précède le dernier refrain — si votre chaîne le compresse, elle trahit l’intention." },
+      { titre: "Money for Nothing", compositeur: "Mark Knopfler, Sting", remarque: "L’introduction de batterie frappe comme un marteau : c’est le test classique de transitoire. Sting chante en falsetto au-dessus, la guitare rythmique reste distincte du kick. Texte fieffé quoiqu’on en dise." },
+      { titre: "Walk of Life", compositeur: "Mark Knopfler", remarque: "Le côté léger : orgue portable très présent et guitare pincée. Les premiers CD sont parfois jugés trop brillants ici — un pressage bien choisi laisse l’orgue ensoleillé sans aigreurs." },
     ],
   },
   {
@@ -57,6 +62,7 @@ const ALBUMS = [
     annee: "1977 (CD dès 1984)",
     genre: "Jazz-rock raffiné",
     resume: "La perfection studio de Fagen et Becker : musiciens de session de Los Angeles, dizaines de prises par morceau, mixages millimétrés d’Elliot Scheiner et Roger Nichols. Le CD MCA MCAD-37145 reste une très bonne porte d’entrée sans compression excessive.",
+    anecdote: "Neuf mois de peaufinage pour sept morceaux : Becker et Fagen, perfectionnistes mythiques, enregistraient et réenregistraient jusqu’à épuisement des musiciens de session — et le disque n’en est que plus limpide. Le nom « Aja » désigne une contrée fantasmée où se réfugier.",
     version: { label: "ABC / MCA", catalogue: "MCAD-37145 (MCA, 1987)", ean: "—", dr: 13, drNote: "Score DR constaté pour l’édition MCA ; les remasters de 1999 varient de 10 à 13 selon la Dynamic Range Database." },
     identification: [
       "Référence MCAD-37145 au dos ; l’édition japonaise précoce « ABCD-841 » (ABC Records, 1984) est la première parution CD, très recherchée.",
@@ -65,10 +71,12 @@ const ALBUMS = [
       "Le SHM-CD japonais de 2013 offre un piano et une basse plus fermes que l’édition US courante.",
     ],
     pistes: [
-      { titre: "Black Cow", compositeur: "Walter Becker, Donald Fagen", remarque: "Basse pleine et grosse caisse serrée ; la voix de Fagen au centre : test de Focus central." },
-      { titre: "Aja", compositeur: "Walter Becker, Donald Fagen", remarque: "Le duo Wayne Shorter (sax) et Steve Gadd (batterie) est un morceau de bravoure : complexe, aérien, toujours lisible." },
-      { titre: "Deacon Blues", compositeur: "Walter Becker, Donald Fagen", remarque: "Saxo alto et piano réverbérés au fond : exercice sur la profondeur de champ et le front d’onde." },
-      { titre: "Josie", compositeur: "Walter Becker, Donald Fagen", remarque: "Groove scellé, percussion définitives ; le bas de spectre et le grain de la grosse caisse y sont exemplaires." },
+      { titre: "Black Cow", compositeur: "Walter Becker, Donald Fagen", remarque: "L’ouverture bétonne le style : batterie de Steve Gadd avec ses ghost-notes sur la caisse claire. Écoutez les graves à droite et la main gauche du piano au centre : trois étages distincts dans un groove impeccable." },
+      { titre: "Aja", compositeur: "Walter Becker, Donald Fagen", remarque: "Le tour de force de huit minutes, avec Wayne Shorter au saxophone soprano et le break de batterie de Steve Gadd devenu légendaire. Le break doit surgir sans jamais brouiller Shorter." },
+      { titre: "Deacon Blues", compositeur: "Walter Becker, Donald Fagen", remarque: "Le grand disque d’orchestration : cuivres en tapis, saxophones en appui, solo de Larry Carlton d’une douceur de moelle. Vérifiez que les cuivres respirent entre les plages vocales, sans coloration métallique." },
+      { titre: "Josie", compositeur: "Walter Becker, Donald Fagen", remarque: "Le côté funk : riff de basse sautillant, guitare de Carlton en écho en abîme, break de batterie très proche. Chaque instrument a sa place dans la stéréo — aucune place de trop." },
+      { titre: "Peg", compositeur: "Walter Becker, Donald Fagen", remarque: "Le joyau radio sous-estimé : chœurs superposés (dont Michael McDonald) et solo de guitare ciselé de Jay Graydon. Aucun étage de chœurs ne doit dominer les autres." },
+      { titre: "Home at Last", compositeur: "Walter Becker, Donald Fagen", remarque: "Le côté feutré et grandiose : batterie sèche, voix dans une pièce immense. La salle doit paraître grande sans jamais devenir confuse." },
     ],
   },
   {
@@ -78,6 +86,7 @@ const ALBUMS = [
     annee: "1973 (CD dès 1984 ; SACD 2003)",
     genre: "Rock progressif",
     resume: "La référence absolue de la scène sonore artistique : effets de balayage, cloches, battements de cœur, travail d’ingénieur d’Alan Parsons (enregistrement Abbey Road). Le mixage de 1973 est une leçon d’immersion avant l’heure.",
+    anecdote: "L’album a passé près de 900 semaines dans les classements américains. Clare Torry, chanteuse de studio engagée pour une session dérisoire, a improvisé son vocalise déchirant du « Great Gig in the Sky » en une seule prise, sans note écrite — puis a obtenu, des années plus tard, la paternité de la ligne vocale qu’elle avait inventée.",
     version: { label: "Harvest / EMI", catalogue: "CDP 7 46001 2 (remaster 1992)", ean: "—", dr: 13, drNote: "Score du CDP « Discovery » ; le SACD 2003 (mixage 5.1 de James Guthrie), CD japonais (UIGY-9589) sont aussi recherchés." },
     identification: [
       "Réf. CDP 7 46001 2 (édition « Discovery », EMI 1992) : la plus fréquente ; l’original Harvest (24 0931 / 064-24 0931) date de 1984.",
@@ -86,11 +95,11 @@ const ALBUMS = [
       "SID codes : présence = réédition de la fin des années 90 / 2000 ; absence (à part IFPI) = 1re presse.",
     ],
     pistes: [
-      { titre: "Speak to Me / Breathe", compositeur: "Nick Mason / Waters, Wright, Gilmour", remarque: "Battements de cœur, sphères sonores qui traversent la salle : test classique de restitution du grave transitoire." },
-      { titre: "Time", compositeur: "Nick Mason, Rick Wright, Roger Waters, David Gilmour", remarque: "Les cloches quatre fois au début : une des plus grosses masses dynamiques du rock ; test de puissance et de texture grave." },
-      { titre: "The Great Gig in the Sky", compositeur: "Richard Wright", remarque: "Vocalise de Clare Torry en impro : dynamique vocale énorme, écho juste — un test de cristallinité du médium." },
-      { titre: "Money", compositeur: "Roger Waters", remarque: "Ligne de basse si charnue qu’elle sert à régler le crossover ; les décrochés de caisses au début balaient la scène de gauche à droite." },
-      { titre: "Us and Them", compositeur: "Roger Waters, Richard Wright", remarque: "Piano Rhodes, cymbales aériennes, delays entre les canaux ; véritable leçon d’image stéréo." },
+      { titre: "Speak to Me / Breathe", compositeur: "Nick Mason / Waters, Wright, Gilmour", remarque: "L’album s’ouvre sur des pulsations de cœur enregistrées puis rejouées à l’envers : un grave ample et battant qui installe la tonalité du disque. Écoutez ensuite la guitare slide de Gilmour posée très à droite puis revenant au centre." },
+      { titre: "Time", compositeur: "Nick Mason, Rick Wright, Roger Waters, David Gilmour", remarque: "Le grand disque d’horlogerie : sept horloges en cascade d’abord, puis une batterie frappée. Écoutez le décalage de chaque horloge (l’une après l’autre, jamais ensemble) et la largeur du break — un des plus beaux passages dynamiques du rock en studio." },
+      { titre: "The Great Gig in the Sky", compositeur: "Richard Wright", remarque: "Piano de Wright poignant, voix improvisée de Clare Torry en sur-plage. C’est l’épreuve du médium vocal féminin : la voix doit devenir écorchée au sommet sans jamais forcer — et une partie des pressages l’a écorchée à outrance." },
+      { titre: "Money", compositeur: "Roger Waters", remarque: "La boucle de caisses enregistreuses qui ouvre : chaque clic de caisse a sa place stéréo précise (droite-gauche-alternance). Le test le plus célèbre de l’album pour la régularité du rythme et du grave résonnant." },
+      { titre: "Us and Them", compositeur: "Roger Waters, Richard Wright", remarque: "Le côté feutré de l’album : orgue de Wright à la route sombre, écho sur la voix. Écoutez le silence dans le triangle de réverbération après chaque « hoo » du saxophone solo — la profondeur de la salle doit se sentir." },
     ],
   },
   {
@@ -100,6 +109,7 @@ const ALBUMS = [
     annee: "1975 (CD dès 1984/1987 ; 2011)",
     genre: "Rock progressif",
     resume: "L’album hommage à Syd Barrett : guitares propres, chœurs cuckoos et synthétiseur VCS3. Les premières éditions CD Harvest restent les plus utilisées en démonstration ; l’édition « Immersion » de 2011 a achevé un très beau travail de restauration.",
+    anecdote: "Le disque est un hommage poignant à Syd Barrett, fondateur du groupe écarté en 1968 pour excès multiples. Anecdote culte : le jour du mixage de « Shine On », un homme corpulent au crâne rasé et aux sourcils partiellement tombés s’est présenté inopinément au studio Abbey Road — c’était Barrett. Gilmour le reconnut aussitôt ; Waters, d’abord, ne le reconnut pas.",
     version: { label: "Harvest / EMI", catalogue: "CDP 7 46003 2 (remaster 1992)", ean: "—", dr: 13, drNote: "Score approximatif pour la lignée des pressings CD ordinaires ; la réédition « Immersion » 2011 varie de 11 à 13." },
     identification: [
       "Référence CDP 7 46003 2 (EMI « Discovery », 1992) ; première génération japonaise : Harvest 064-24 0934 (1984).",
@@ -108,10 +118,11 @@ const ALBUMS = [
       "L’édition vinyle audiophile 180 g de 2011 (Acoustic Sounds / QRP) est belle, mais le master numérique reste plus complet.",
     ],
     pistes: [
-      { titre: "Shine On You Crazy Diamond (parties 1 à 5)", compositeur: "David Gilmour, Roger Waters, Rick Wright", remarque: "L’introduction (guitare, réverbération d’Abbey Road) est LE test de la dynamique ambiante ; le solo final est un monument." },
-      { titre: "Welcome to the Machine", compositeur: "Roger Waters", remarque: "Synthétiseur VCS3 : test des très basses fréquences et de la tenue du grave sub-basse." },
-      { titre: "Wish You Were Here", compositeur: "Roger Waters, David Gilmour", remarque: "L’intro façon radio AM (voix écornée) est un exercice de réalisme des interférences maîtrisées." },
-      { titre: "Have a Cigar", compositeur: "Roger Waters", remarque: "Chant de Roy Harper, basse pleine : test de présence voix et de grave modulé." },
+      { titre: "Shine On You Crazy Diamond (parties 1 à 5)", compositeur: "David Gilmour, Roger Waters, Rick Wright", remarque: "L’ouverture bétonne l’esthétique : nappe de synthé très étale, guitare à l’écho omniprésent qui entre lentement, puis montée progressive. Écoutez comme chaque couche s’ajoute sans en écraser une autre — une leçon d’empilement." },
+      { titre: "Welcome to the Machine", compositeur: "Roger Waters", remarque: "Gros disque étroit de synthé, avec effets qui vont et viennent de gauche à droite. Le test des effets panoramiques : les bruits de machine doivent traverser l’image stéréo de bord en bord, jamais s’y confiner." },
+      { titre: "Wish You Were Here", compositeur: "Roger Waters, David Gilmour", remarque: "Guitare acoustique en ouverture, comme sur un petit magnétophone de radio am — délibérément « détérioré » avant la version nette. Écoutez le passage du son radio au son de studio : le vrai disque doit conserver les deux régions intactes." },
+      { titre: "Have a Cigar", compositeur: "Roger Waters", remarque: "Le satire du show-biz, avec Roy Harper au chant (les membres du groupe se sentaient trop exposés). Vérifiez la chanson de basses appuyées et la saturation maîtrisée du solo de guitare de David Gilmour : densité rock sans jamais lâcher la définition." },
+      { titre: "Shine On You Crazy Diamond (parties 6 à 9)", compositeur: "David Gilmour, Roger Waters, Rick Wright", remarque: "Le retour du thème en version décapée et nocturne : saxophone ténébreux de Dick Parry, grande réverbération de salle et montée finale. Si les graves roulent sans creuser, tout va bien." },
     ],
   },
   {
@@ -121,6 +132,7 @@ const ALBUMS = [
     annee: "1974 (CD dès 1984 ; édition 2014)",
     genre: "Rock progressif / symphonique",
     resume: "Un monument de production (Ken Scott, avec Bill Price aux studios Ramport) : claviers, saxophone, cuivres, fondus enchaînés. L’original CD A&M reste superbe ; le remaster de 2014 (A&M/UMG) a été compressé au point de perdre tout l’intérêt audiophile.",
+    anecdote: "L’album a été presque entièrement enregistré la nuit, aux studios Ramport (la propriété de The Who à Londres), avec l’ingénieur Bill Price à la console. Sortie mi-1974 : le disque s’est vendu par millions sans qu’aucun de ses morceaux ne devienne un tube radiophonique majeur.",
     version: { label: "A&M", catalogue: "CD 3279 (CD original, 1984)", ean: "—", dr: 14, drNote: "L’original CD A&M reste le plus dynamique (environ 14) ; le remaster 2014 tombe vers 9-10 selon la Dynamic Range Database." },
     identification: [
       "Référence « CD 3279 » sur le boîtier (édition A&M des années 80) ; rééditions ultérieures : 75021-3279-2 puis 493 327-2.",
@@ -129,10 +141,12 @@ const ALBUMS = [
       "L’édition SHM-CD japonaise (2014) se reconnaît à son obi japonais — mais celui-ci est déjà compressé.",
     ],
     pistes: [
-      { titre: "School", compositeur: "Rick Davies, Roger Hodgson", remarque: "Harmonica, synthé Moog et solo d’orgue : un des tests les plus communicatifs de dynamique et d’attaque ; montée finale impressionnante." },
-      { titre: "Bloody Well Right", compositeur: "Rick Davies", remarque: "Piano électrique Wurlitzer et saxes : test de timbre et d’étagement harmonique." },
-      { titre: "Dreamer", compositeur: "Roger Hodgson", remarque: "Intro à la voix sur claquettes-piano ; la fusion piano/vibraphone est un grand moment de scène sonore." },
-      { titre: "Crime of the Century", compositeur: "Rick Davies, Roger Hodgson", remarque: "Gouttes d’eau synthétisées au tout début : le test minimal d’une reproduction correcte ; la réverbération y est exemplaire." },
+      { titre: "School", compositeur: "Rick Davies, Roger Hodgson", remarque: "L’ouverture bétonne l’esthétique : piano et claviers sincères, sifflet de cour de récré, puis la guitare qui s’envole en solo étalé. Écoutez le passage du calme d’école au grand pilonnage final — la dynamique doit surprendre sans jamais esquiver." },
+      { titre: "Bloody Well Right", compositeur: "Rick Davies", remarque: "Le côté rock boogie : piano Fender plutôt que Hammond, deux guitares qui se répondent de part et d’autre de l’image. Une leçon de dialogue stéréo." },
+      { titre: "Dreamer", compositeur: "Roger Hodgson", remarque: "Le côté enfantin et jubilatoire : piano frappé sans délai, chœurs souriants, claquements de mains. Le test du médium joyeux — la fête sonore doit rester nette sans jamais sonner colorée." },
+      { titre: "Rudy", compositeur: "Rick Davies, Roger Hodgson", remarque: "Sept minutes de théâtre sonore : claviers en ambiance de lounge, percussions métalliques, grand break final. Écoutez le claquement des percussions dans le silence — le test des transitoires fins de l’album." },
+      { titre: "If Everyone Was Listening", compositeur: "Rick Davies, Roger Hodgson", remarque: "La balade piano-voix de l’album, avec de discrètes cordes en encadrement. La pureté du médium à bas volume : si la voix se colore, c’est toute la chaîne qui fait des siennes." },
+      { titre: "Crime of the Century", compositeur: "Rick Davies, Roger Hodgson", remarque: "Le grand final aérien : claviers spacieux, guitare en écho, batterie qui ralentit. Écoutez le fondu final — le silence doit revenir comme un souffle. Test du grand frisson feutré de l’album." },
     ],
   },
   {
@@ -142,6 +156,7 @@ const ALBUMS = [
     annee: "1982 (CD dès 1984)",
     genre: "Jazz-pop sophistiqué",
     resume: "Le disque de démonstration de la Warner de l’époque : enregistré natif numérique (3M Digital Mastering System), mixé par Roger Nichols et Elliot Scheiner, avec une dynamique énorme pour 1982. La référence des systèmes hi-fi « neutres » depuis quarante ans.",
+    anecdote: "L’album est un grand disque de nostalgie : Fagen, alors étudiant, fut un temps animateur de radio nocturne — « The Nightfly » raconte ses nuits de DJ. C’est aussi l’un des tous premiers albums majeurs entièrement enregistrés et mixés en audio numérique (magnétophones 3M 32 pistes au studio The Village Recorder, à Los Angeles), ce qui explique son grain singulier.",
     version: { label: "Warner Bros.", catalogue: "9 23696-2 (CD original, 1984)", ean: "—", dr: 16, drNote: "Score DR constaté sur presque tous les pressages CD ; un des chiffres les plus élevés de la pop (les masters numériques de 1982 étaient peu compressés)." },
     identification: [
       "Référence « 9 23696-2 » (Warner Bros. US) ; équivalent international WX 36-2 ; réédition remasterisée 1998 (8122-73696-2).",
@@ -150,11 +165,13 @@ const ALBUMS = [
       "Codes SID présents sur les rééditions européennes après 1995 ; code DIDX figure sur la version US.",
     ],
     pistes: [
-      { titre: "I.G.Y. (What a Beautiful World)", compositeur: "Donald Fagen", remarque: "Guitare de Larry Carlton au début : attaque et reverb légère ; le piano Rhodes s’intercale entre les voix au centre ; une leçon d’agencement." },
-      { titre: "New Frontier", compositeur: "Donald Fagen", remarque: "Basse pleine et percussions latines : un test de tenue en bas de spectre et de texture." },
-      { titre: "The Nightfly", compositeur: "Donald Fagen", remarque: "La voix au plus près, parfaite étude de présence de micro : démonstration du médium vocal." },
-      { titre: "Maxine", compositeur: "Donald Fagen", remarque: "Piano, vibraphone et chœurs derrière : profondeur du mixage et douceur naturelle." },
-      { titre: "Walk Between Raindrops", compositeur: "Donald Fagen", remarque: "Fin d’album ensoleillée, batterie latine ; la dynamique de crête y est exploitée jusqu’au bout." },
+      { titre: "I.G.Y. (What a Beautiful World)", compositeur: "Donald Fagen", remarque: "L’ouverture bétonne l’esthétique : batterie de Steve Gadd hors norme, chœurs enlacés, synthé qui s’ouvre comme un lever de soleil artificiel. Écoutez comme la grosse caisse frappe en profondeur sans jamais brouiller la basse." },
+      { titre: "New Frontier", compositeur: "Donald Fagen", remarque: "Le grand disque radioactif : batterie de synthé sautillante, marimba posé tout à droite, voix souriante. Le grand test du marimba — chaque frottement de mailloche doit rester distinct." },
+      { titre: "The Nightfly", compositeur: "Donald Fagen", remarque: "La balade d’album : guitare discrète, piano posé, voix au premier plan. À volume faible, c’est l’épreuve de l’image vocale — la voix doit sembler dans la pièce, avec son ambiance d’antenne nocturne." },
+      { titre: "Maxine", compositeur: "Donald Fagen", remarque: "Le côté romantique feutré : trio piano-contrebasse-batterie en brushes. Écoutez le médium pur de la voix et la souplesse de la contrebasse — un test de timbre sans comparaison du disque." },
+      { titre: "Walk Between Raindrops", compositeur: "Donald Fagen", remarque: "Le grand disque de sortie festive : batterie tourbillonnante, cordes et vibraphone étalés. C’est la leçon d’étalement du disque — chaque instrument doit se poser dans l’image sans couleur métallique parasite." },
+      { titre: "Green Flower Street", compositeur: "Donald Fagen", remarque: "Le grand disque d’énergie : riff de guitare propre en aller-retour droite-gauche, batterie souvent proche. Écoutez comme la guitare passe d’un canal à l’autre — la panning doit être franche, jamais molle." },
+      { titre: "Ruby Baby", compositeur: "Jerry Leiber, Mike Stoller", remarque: "La reprise placide du vieux rock de Brooklyn : chœurs superposés façon doo-wop au-dessus d’une batterie moderne. Le mélange des époques (1950 en fond, 1982 en avant) doit rester lisible — un disque à écoute guidée." },
     ],
   },
   {
@@ -164,6 +181,7 @@ const ALBUMS = [
     annee: "1959 (CD : Columbia / Legacy)",
     genre: "Jazz modal",
     resume: "L’album de jazz le plus vendu de l’histoire : Miles, Coltrane, Evans, Adderley, enregistré en mars-avril 1959 au 30th Street Studio de Columbia. Le CD Legacy de 1997 est le plus pratique ; le SHM-SACD japonais (2013) représente le sommet actuel.",
+    anecdote: "Sept heures d’enregistrement au total, sur deux sessions (mars et avril 1959), sans répétition formelle : Miles Davis griffonnait des esquisses d’accords et de gammes sur des feuilles qu’il disposait sur le pupitre des musiciens à l’arrivée. Presque tout ce qu’on entend est un premier ou deuxième essai — c’est d’ailleurs le disque de jazz le plus vendu de l’histoire.",
     version: { label: "Columbia / Legacy", catalogue: "CK 64935 (remaster Legacy, 1997)", ean: "074646493524", dr: 13, drNote: "Score approximatif de l’édition 1997 ; les éditions antérieures (CK 40579) sont parfois moins bonnes ; le master de l’époque est étroitement lié à la bande 3 pistes." },
     identification: [
       "CK 64935 = édition Legacy 1997 avec bonus (false starts) ; l’édition antérieure CK 40579 (1987) est plus rudimentaire.",
@@ -172,10 +190,11 @@ const ALBUMS = [
       "Cocher le code matrice « CK 64935 » + SID code Sony/DADC ; les « targets » allemands (Columbia 467609-2) se repèrent à leur façonnage précoce.",
     ],
     pistes: [
-      { titre: "So What", compositeur: "Miles Davis", remarque: "La basse de Paul Chambers ouvre seule : test ultime de texture et de timbre du contrebasse ; piano de Evans très aérien." },
-      { titre: "Blue in Green", compositeur: "Miles Davis (attribué à Bill Evans)", remarque: "Les respirations de Miles et l’ambiance feutrée du studio de Columbia : leçon de silence et de réverbération naturelle." },
-      { titre: "All Blues", compositeur: "Miles Davis", remarque: "Valse 6/8, interaction des trois souffles ; test de lisibilité des têtes d’affiche à volume constant." },
-      { titre: "Flamenco Sketches", compositeur: "Miles Davis, Bill Evans", remarque: "Modal, très calme : un test de résolution et d’image stéréo du duo piano/contrebasse." },
+      { titre: "So What", compositeur: "Miles Davis", remarque: "L’ouverture bétonne la modernité : piano de Bill Evans en dialogue d’abord, puis la trompette bouchée de Miles posée en retrait, lointaine. Écoutez la contrebasse de Paul Chambers poser la base — un test intemporel du timbre du grave." },
+      { titre: "Freddie Freeloader", compositeur: "Miles Davis", remarque: "Le côté blues ensoleillé, avec Wynton Kelly au piano (le seul morceau sans Bill Evans). Un test d’ambiance de studio : la pièce doit être présente et chaleureuse, jamais sèche." },
+      { titre: "Blue in Green", compositeur: "Miles Davis (attribué à Bill Evans)", remarque: "Trois minutes de nuit profonde : piano d’Evans en nappes, trompette de Miles avec sourdine harmon en écho au piano. Écoutez comme les deux timbres se fondent — un test de cohérence dans le registre médium." },
+      { titre: "All Blues", compositeur: "Miles Davis", remarque: "La valse lente en six-huit : Jimmy Cobb aux baguettes souples et John Coltrane en solo touffu. Écoutez le médium de la trompette avec sourdine harmon : présent, jamais envahissant." },
+      { titre: "Flamenco Sketches", compositeur: "Miles Davis, Bill Evans", remarque: "Le côté espagnol : gammes en mode flamenco derrière chaque solo, basses profondes d’Evans. Le morceau le plus calme de l’album : patience et pureté du médium, sans fioriture." },
     ],
   },
   {
@@ -185,6 +204,7 @@ const ALBUMS = [
     annee: "1959 (CD : Columbia / Legacy)",
     genre: "Jazz",
     resume: "L’album des mesures irrégulières (Take Five en 5/4) enregistré au Columbia 30th Street Studio. Les éditions CD Columbia (CK 40585, puis l’édition « 50th Anniversary Legacy » 2009 enrichie d’inédits) sont propres ; le SHM-SACD japonais (2014) donne plus de corps à Paul Desmond.",
+    anecdote: "Au départ, Columbia craignait la folie de l’affaire : des mesures de 5/4 et 9/8 dans un disque de jazz, c’était impensable en 1959. Résultat : premier disque de jazz à dépasser le million d’exemplaires, et « Take Five », premier single de jazz millionnaire. Brubeck avait capté le 9/8 de « Blue Rondo à la Turk » dans les rues d’Istanbul, battu par les pas des marchés.",
     version: { label: "Columbia / Legacy", catalogue: "CK 40585 (remaster, 1987)", ean: "—", dr: 13, drNote: "Score approximatif ; l’édition Legacy 50e anniversaire (2009, 88697 55508-2) contient les prises alternates et un livret — dynamique similaire." },
     identification: [
       "CK 40585 = édition la plus répandue depuis 1987 ; l’édition 50e anniversaire (2009) porte la réf. 88697 55508-2.",
@@ -193,10 +213,11 @@ const ALBUMS = [
       "Matrice : « CK 40585 » + DADC/Sonopress ; le fameux « target » Columbia (face interne argentée) se repère à son anneau lisse rapproché du centre.",
     ],
     pistes: [
-      { titre: "Take Five", compositeur: "Paul Desmond", remarque: "Le solo d’alto de Desmond tourne autour de la batterie de Morello ; un test d’étagement des plans sonores." },
-      { titre: "Blue Rondo à la Turk", compositeur: "Dave Brubeck", remarque: "Piano percussif en 9/8 ; test d’articulation et de transitoires du piano acoustique." },
-      { titre: "Strange Meadow Lark", compositeur: "Dave Brubeck", remarque: "Piano lyrique en duo puis trio ; une leçon de mesure et de respiration dans le grave." },
-      { titre: "Kathy’s Waltz", compositeur: "Dave Brubeck", remarque: "Interaction piano/batterie rythmiquement et musicalement resserrée ; les décalages révèlent la précision de restitution." },
+      { titre: "Take Five", compositeur: "Paul Desmond", remarque: "Le morceau le plus reconnaissable du jazz : batterie de Joe Morello en 5/4 parfaitement posée, saxophone alto de Desmond au timbre sec et gouleyant. Écoutez la micro-régularité du rideau de cymbales — ici, le vrai test." },
+      { titre: "Blue Rondo à la Turk", compositeur: "Dave Brubeck", remarque: "Le grand disque de contretemps : 2+2+2+3 au début, puis passage soudain au 4/4 du blues. Le test de la cohérence rythmique — si votre chaîne bave sur les attaques de piano, c’est ici que ça s’entend." },
+      { titre: "Strange Meadow Lark", compositeur: "Dave Brubeck", remarque: "La balade du disque : piano méditatif d’abord, puis solo de Desmond d’une douceur rare. Test du silence entre les notes — un beau pressage garde le calme absolu dans les plages les plus discrètes." },
+      { titre: "Kathy’s Waltz", compositeur: "Dave Brubeck", remarque: "La valse piège : mesures de 3/4, puis le pas de temps qui se décale au milieu du morceau. Écoutez comme la batterie passe d’une métrique à l’autre sans jamais vaciller." },
+      { titre: "Pick Up Sticks", compositeur: "Dave Brubeck", remarque: "Le côté feutré et mystérieux : batterie en brushes au premier plan, piano en plages espacées. Test du focus au centre de l’image — chaque frappe de baguette doit avoir sa place exacte." },
     ],
   },
   {
@@ -206,6 +227,7 @@ const ALBUMS = [
     annee: "1975 (CD : ECM 1064/65)",
     genre: "Jazz / improvisation (piano solo)",
     resume: "Le concert solo le plus vendu de l’histoire du jazz, enregistré à l’opéra de Cologne le 24 janvier 1975, avec un piano considéré inconfortable. L’enregistrement ECM (ingénieur Martin Wieland) capture pourtant une présence extraordinaire du piano et du silence de la salle.",
+    anecdote: "Le piano Bösendorfer fourni ce soir-là à l’opéra de Cologne était dans un état piteux : touches coincées, registre grave presque mort. Keith Jarrett, épuisé et souffrant du dos, a demandé un autre piano — en vain — et a fini par jouer des heures de suite, presque exclusivement dans le médium-aigu de l’instrument. Manfred Eicher a enregistré le concert ; le disque est devenu le plus vendu de l’histoire du piano solo.",
     version: { label: "ECM", catalogue: "ECM 1064/65 (CD original, 1984)", ean: "—", dr: 15, drNote: "Score DR élevé, constant sur les éditions ; l’original ECM et le remaster japonais (1998,.POCE) sont équivalents en dynamique." },
     identification: [
       "Réf. ECM 1064/65 (double CD original ; les premières presses sont fabriquées par PolyGram, quelques-unes en Allemagne).",
@@ -214,10 +236,10 @@ const ALBUMS = [
       "Comme toujours avec ECM : « ECM 1064/65 ST 834 » (stereophonic) dans la zone interne ; à recopier.",
     ],
     pistes: [
-      { titre: "Köln, Janvier 1975, Part I (débuts)", compositeur: "Keith Jarrett (improvisation)", remarque: "Les 15 premières minutes : ostinato moteur puis jeu pianistique ; le silence de la salle — y compris une toux célèbre — fait partie de l’enregistrement." },
-      { titre: "Part I (medial section)", compositeur: "Keith Jarrett (improvisation)", remarque: "Le jeu à la main gauche stratosphérique et plein de sustain : test d’homogénéité du médium-grave et de réverbération." },
-      { titre: "Part II (danse finale)", compositeur: "Keith Jarrett (improvisation)", remarque: "Les ostinatos endiablés et vocalises de Jarrett ; le médium du piano est légèrement saturé d’origine : un vrai critère d’écoute." },
-      { titre: "Memories of Tomorrow", compositeur: "Keith Jarrett", remarque: "Pièce intime de l’encore : test ultime de mini-dynamique et de la tenue des notes répétées." },
+      { titre: "Köln, Janvier 1975, Part I (débuts)", compositeur: "Keith Jarrett (improvisation)", remarque: "Les premières minutes titubent volontairement : arpèges qui s’ajoutent, ostinato de main gauche qui s’installe. Écoutez comme le groove naît de rien — et comme le plateau percussif du piano (touché très dur) reste lisible sans confusion." },
+      { titre: "Part I (medial section)", compositeur: "Keith Jarrett (improvisation)", remarque: "Le côté chanté de l’improvisation : accords full, silence de salle presque religieux, bruits de scène audibles (Jarrett chantonne). Le disque capture une salle de 1 400 places : la réverbération doit rester douce jamais creuse." },
+      { titre: "Part II (danse finale)", compositeur: "Keith Jarrett (improvisation)", remarque: "Le côté rhythmique : répétitions voluptueuses de main gauche, mélodie qui danse par-dessus. Test de la tenue du grave — le piano est soumis à rude épreuve et le disque doit en garder la mécanique visible." },
+      { titre: "Memories of Tomorrow", compositeur: "Keith Jarrett", remarque: "La mélodie enclenchée après 66 minutes d’improvisation : brève, limpide, presque enfantine. À volume faible, c’est l’épreuve de pureté ultime du médium — le piano doit sonner bois et marteaux, physiquement." },
     ],
   },
   {
@@ -227,6 +249,7 @@ const ALBUMS = [
     annee: "1994 (CD : Premonition Records)",
     genre: "Jazz vocal / cabaret avant-gardiste",
     resume: "Enregistré et mixé aux Chicago Recording Company en juin-juillet 1994, un classique audiophile absolu : voix très proche, piano au grain sculpté, cymbales aériennes. De nombreuses éditions premium existent (FIM 24K Gold, MFSL SACD, Analogue Productions, version « Un-Mastered » de Gus Skinas) — et le remix 2011 de Jim Anderson est jugé supérieur par de nombreux critiques.",
+    anecdote: "Pendant des années, Patricia Barber a accompagné le piano-bar du Gold Star Sardine Bar de Chicago, six soirs par semaine. C’est là que le label indépendant Premonition l’a repérée : « Café Blue » est sorti sur une petite structure, avec un budget de mini-major — et il est devenu, malgré tout, l’un des disques de démonstration les plus vendus du monde audiophile.",
     version: { label: "Premonition Records", catalogue: "PRM 46002 (CD original, 1994)", ean: "—", dr: 15, drNote: "Score approximatif de l’édition originale ; la version SACD MFSL et l’« Un-Mastered » se situent entre 14 et 17 — variant beaucoup selon le mastering." },
     identification: [
       "Réf. PRM 46002 sur le boîtier original ; mastering au Foothill Digital (New York).",
@@ -235,11 +258,14 @@ const ALBUMS = [
       "Vérifier sur votre exemplaire la mention « Recorded and Mixed at Chicago Recording Company, Studio 5 » et recopier matrix + SID.",
     ],
     pistes: [
-      { titre: "What a Shame", compositeur: "Patricia Barber", remarque: "Voix et piano en close-up, grosse caisse et percussions à tester ; le test classique du médium vocal en jazz." },
-      { titre: "The Thrill Is Gone", compositeur: "Rick Darnell, Roy Hawkins (reprise)", remarque: "Réinventée en miniature sombre ; l’espace autour du piano est fascinant (attention aux résonances sur les systèmes peu disciplinés)." },
-      { titre: "Ode to Billy Joe", compositeur: "Bobbie Gentry (reprise)", remarque: "Contrebasse pompée, piano très étalé : leçon de la scène acoustique du studio." },
-      { titre: "A Taste of Honey", compositeur: "Ric Marlow, Bobby Scott (reprise)", remarque: "Percussions cymbalées et réverbération profonde ; un test de l’aigu sans aspérité." },
-      { titre: "Too Rich for My Blood", compositeur: "Patricia Barber", remarque: "Pièce la plus moderne de l’album : jeu de piano minimaliste et batterie latine ; la dynamique de cymbale est superbe." },
+      { titre: "What a Shame", compositeur: "Patricia Barber", remarque: "Le test vocal de disque : voix en très gros plan (proche au point d’entendre la salive), piano à droite, grosse caisse sèche au centre. Écoutez le contraste entre la proximité de la voix et la profondeur du fond — c’est toute la magie du disque." },
+      { titre: "Mourning Grace", compositeur: "Patricia Barber", remarque: "Neuf minutes de théâtre : break de batterie inattendu, voix parlée-chantée, cordes qui déferlent. Le test de la cohérence lors des montées — les couches doivent se déployer sans jamais se teinter en agressivité." },
+      { titre: "The Thrill Is Gone", compositeur: "Rick Darnell, Roy Hawkins (reprise)", remarque: "Réinventée en miniature sombre : l’espace autour du piano est fascinant, le silence occupe la moitié du disque. Écoutez les résonances longues — sur les systèmes peu disciplinés, elles sifflent et révèlent la pièce." },
+      { titre: "Ode to Billy Joe", compositeur: "Bobbie Gentry (reprise)", remarque: "Contrebasse présente, piano très étalé : leçon de la scène acoustique du studio. La main droite du piano au centre-droit doit se détacher proprement — un bon pressage donne presque la position des pédales." },
+      { titre: "Nardis", compositeur: "Miles Davis", remarque: "Le côté modal sombre : piano en voiles d’accords, seul moment où le disque joue la tension. Écoutez comme la résonance de chaque accord s’éteint naturellement — un test de dynamique en coulisse." },
+      { titre: "Manha de Carnaval", compositeur: "Luiz Bonfá, Antonio Maria", remarque: "La reprise placide de la bossa en nocturne : guitare douce et voix étale. Écoutez le fondu final — le dernier accord doit mourir dans le silence sans jamais s’écraser numériquement." },
+      { titre: "Too Rich for My Blood", compositeur: "Patricia Barber", remarque: "Pièce la plus moderne de l’album : jeu de piano minimaliste et batterie latine. La dynamique de cymbale est superbe — un test du haut du spectre sans aspérité métallique." },
+      { titre: "A Taste of Honey", compositeur: "Ric Marlow, Bobby Scott (reprise)", remarque: "Percussions cymbalées et réverbération profonde : test de l’aigu sans aspérité. La voix reste au centre comme un stabilisateur — vérifiez qu’elle ne se dédouble jamais dans les montées." },
     ],
   },
   {
@@ -249,6 +275,7 @@ const ALBUMS = [
     annee: "1994 (CD : Chesky Records)",
     genre: "Folk-pop audiophile",
     resume: "Le disque de démonstration de Chesky : voix cristalline enregistrée très proche, trois micros, aucune compression. L’édition originale JD115 (ingénieur Bob Katz) est souveraine ; les masters ultérieurs (upsampling 96 kHz/24 bits) sont aussi très bien notés.",
+    anecdote: "Rebecca Pidgeon est l’épouse du dramaturge David Mamet (coauteur de plusieurs titres du disque et réalisateur de « House of Games » où elle joue). La méthode Chesky est radicale : quelques micros seulement, pas de compression notable, la voix enregistrée dans un vrai espace — c’est ce disque qui a imposé Chesky comme étalon des disques de démonstration haut de gamme.",
     version: { label: "Chesky Records", catalogue: "JD115 (CD original, 1994)", ean: "—", dr: 17, drNote: "Parmi les scores DR les plus élevés de la pop (17 et davantage sur certaines éditions) — l’archétype du master « peu compressé »." },
     identification: [
       "Référence JD115 (Chesky Records US) ; réimpression ultérieure avec codes SID ; une édition Gold CD avec encart spécial existe.",
@@ -257,11 +284,12 @@ const ALBUMS = [
       "Vérifier la matrice (JD115) + codes SID et IFPI pour différencier le pressage original de la reprise.",
     ],
     pistes: [
-      { titre: "Kalerka", compositeur: "Rebecca Pidgeon", remarque: "Ouverture rythmée, voix et batterie discrète : test d’articulation des consonnes et d’espace autour de la voix." },
-      { titre: "Grandmother", compositeur: "Rebecca Pidgeon", remarque: "Voix et cordes discrètes ; un test de résolution et de chaleur." },
-      { titre: "Heart and Mind", compositeur: "Rebecca Pidgeon, David Mamet", remarque: "Chanson intime ; la respiration de la chanteuse fait partie de la musique : test de silence de fond." },
-      { titre: "Spanish Harlem", compositeur: "Jerry Leiber, Phil Spector", remarque: "La reprise la plus célèbre : cordes et cloches, montée progressive — LE test de l’image et du médium doux." },
-      { titre: "The Height of Land", compositeur: "Rebecca Pidgeon, David Mamet", remarque: "Ambiance écossaise, harpes et guitare ; test de transitoire doux et de la scène large." },
+      { titre: "Kalerka", compositeur: "Rebecca Pidgeon", remarque: "L’ouverture signature de Chesky : batterie discrète et voix décalée à gauche du centre. Écoutez l’articulation des consonnes — la voix doit être précise, posée, avec sa petite bulle d’air." },
+      { titre: "Grandmother", compositeur: "Rebecca Pidgeon", remarque: "Voix et cordes discrètes en arrière-plan : test de résolution et de chaleur. Si les cordes sonnent plastique, c’est le haut du spectre de la chaîne qui force." },
+      { titre: "Heart and Mind", compositeur: "Rebecca Pidgeon, David Mamet", remarque: "Chanson intime : la respiration de la chanteuse fait partie de la musique. C’est le test de silence de fond le plus exigeant du disque — écoutez entre les phrases." },
+      { titre: "Spanish Harlem", compositeur: "Jerry Leiber, Phil Spector", remarque: "La reprise la plus célèbre : cordes, cloches et montée progressive. LE test d’image et de médium doux — la voix doit rester posée pendant que les cordes s’ouvrent en éventail autour d’elle." },
+      { titre: "The Height of Land", compositeur: "Rebecca Pidgeon, David Mamet", remarque: "Ambiance écossaise : harpes et guitare en tapis. Test du transitoire doux et de la largeur de scène — la harpe doit se déployer sans jamais s’affadir." },
+      { titre: "The Witch", compositeur: "Rebecca Pidgeon, David Mamet", remarque: "Le côté feutré et Old Continent : voix posée sur un tapis de cordes, batterie en appui discret. Écoutez comme la voix se détache d’un fond qui reste lisible — le défaut classique étant le fond qui engloutit." },
     ],
   },
   {
@@ -271,6 +299,7 @@ const ALBUMS = [
     annee: "1993 (CD : Water Lily Acoustics)",
     genre: "World / improvisation (guitare slide & mohan veena)",
     resume: "Jam session improvisée d’une heure, enregistrée en une nuit de septembre 1992 dans le pensionnat Villa Montalvo (Californie) par Kavichandran Alexander. Ingénierie analogique à tubes (Tim de Paravicini, EMT), dynamique rare ; Grammy du meilleur album de musique du monde en 1994.",
+    anecdote: "Jam session d’une heure enregistrée en une seule nuit de septembre 1992, dans la Villa Montalvo (Saratoga, Californie) : Cooder et Bhatt ne partageaient pas la même langue et communiquaient par gestes, sourires et notes. Le fils de Ry, Joachim (encore adolescent), tient la tabla — l’album a remporté le Grammy de la musique du monde en 1994.",
     version: { label: "Water Lily Acoustics", catalogue: "WLA-CS-31-CD (CD original, 1993)", ean: "—", dr: 17, drNote: "Score DR très élevé, proche du plafond utile ; le disque est quasiment identique à la bande de session." },
     identification: [
       "Réf. WLA-CS-31-CD ; mastering par Kevin Michael Gray et Paul Stubblebine ; consultance technique Tim de Paravicini.",
@@ -279,10 +308,10 @@ const ALBUMS = [
       "Ce CD étant court (39:35), vérifier l’anneau interne (matrice + SID) pour distinguer le pressage original des réimpressions.",
     ],
     pistes: [
-      { titre: "A Meeting by the River", compositeur: "Ry Cooder, Vishwa Mohan Bhatt", remarque: "La rencontre des deux instruments : chaque note mise en relief, immense scène entre les deux soloistes ; leçon d’improvisation enregistrée en direct." },
-      { titre: "Longing", compositeur: "Ry Cooder, Vishwa Mohan Bhatt", remarque: "Structure assimilable à un raga : montée lente, test de patience et d’homogénéité du médium-grave." },
-      { titre: "Ganges Delta Blues", compositeur: "Ry Cooder, Vishwa Mohan Bhatt", remarque: "La fusion la plus rock de l’album ; le dumbek de Joachim Cooder et la tabla testent le bas de spectre." },
-      { titre: "Isa Lei", compositeur: "Ratu Tevita (chanson fidjienne)", remarque: "Cooder prend seul la mélodie d’une hymne d’adieu fidjien ; glissandos et vibratos de mohan veena : leçon de la pureté du registre aigu." },
+      { titre: "A Meeting by the River", compositeur: "Ry Cooder, Vishwa Mohan Bhatt", remarque: "La rencontre fondatrice : la guitare slide de Cooder à gauche, la mohan veena de Bhatt à droite, la tabla et le dumbek au centre. Écoutez comme chaque note est mise en relief individuellement — l’enregistrement sans limiteur donne une pureté de transitoire exceptionnelle." },
+      { titre: "Longing", compositeur: "Ry Cooder, Vishwa Mohan Bhatt", remarque: "Structure assimilable à un raga : montée lente, tensions qui s’accumulent sur 11 minutes. Test de patience et d’homogénéité du médium-grave — rien ne doit colorer ni grossir les notes tenues des deux instruments." },
+      { titre: "Ganges Delta Blues", compositeur: "Ry Cooder, Vishwa Mohan Bhatt", remarque: "La fusion la plus rock de l’album : slide en pleine énergie frontale, percussions du jeune Joachim Cooder en appui. Le bas du spectre est ici le plus sollicité du disque — écoutez la percussion de la tabla, nette et sans boom." },
+      { titre: "Isa Lei", compositeur: "Ratu Tevita (chanson fidjienne)", remarque: "Cooder seul sur la mélodie d’une hymne d’adieu fidjienne ; glissandos et vibratos de la mohan veena en réponse. Le test de la pureté du registre aigu — les notes filées doivent rester lumineuses sans jamais devenir agressives." },
     ],
   },
   {
@@ -292,6 +321,7 @@ const ALBUMS = [
     annee: "1976 (CD dès 1984 ; édition 1999)",
     genre: "Rock",
     resume: "Un monument de la production rock (Bill Szymczyk) : deux guitares lead, congas, couche d’ambiance sonore étalée. L’édition CD Asylum originelle « target » (1984) reste très bien notée ; le remaster de 1999 est plus net sans compression excessive.",
+    anecdote: "Don Felder a composé la chanson titre sur une maquette de deux guitares enregistrée dans une maison louée au bord de l’océan, que le groupe surnommait « Mexican Reggae ». L’album, produit par Bill Szymczyk, a été enregistré entre les studios Criteria de Miami et le Record Plant de Los Angeles — et il est resté le plus vendu du groupe, des dizaines de millions d’exemplaires.",
     version: { label: "Asylum (Elektra)", catalogue: "5052-2 (CD original, 1984)", ean: "—", dr: 13, drNote: "Score approximatif pour l’original comme pour le remaster de 1999 ; les pressages récents s’effondrent vers 9-10." },
     identification: [
       "Réf. « 5052-2 » (Asylum) : le fameux CD « target » avec sa face interne silver sans code SID.",
@@ -300,10 +330,12 @@ const ALBUMS = [
       "Vérifier la matrice « 5052-2 » + WEA manufacturing ; les targets se reconnaissent à la gravure « Made in Germany by WEA Musik GmbH ».",
     ],
     pistes: [
-      { titre: "Hotel California", compositeur: "Don Felder, Don Henley, Glenn Frey", remarque: "Intro à deux guitares : leçon d’image (positions des guitares gauche/droite) ; bongos et claves testent la définition des percussions." },
-      { titre: "New Kid in Town", compositeur: "Don Henley, Glenn Frey, Jackson Browne", remarque: "Voix superposées, guitare 12 cordes gauche : test de polarisation stéréo du médium." },
-      { titre: "Wasted Time", compositeur: "Don Henley, Glenn Frey", remarque: "Piano, cordes et batterie discrète ; un test du médium référent sans brillance excessive." },
-      { titre: "Life in the Fast Lane", compositeur: "Joe Walsh, Glenn Frey, Don Henley", remarque: "Guitares jumelées gauche-droite avec la basse au centre : leçon d’étagement en grande largeur ; dynamique de la section finale." },
+      { titre: "Hotel California", compositeur: "Don Felder, Don Henley, Glenn Frey", remarque: "L’intro à deux guitares est la leçon d’image la plus célèbre du rock : chaque guitariste occupe son canal puis se rejoignent au centre. Écoutez les bongos et les claves — un bon pressage donne une définition de percussion ciselée." },
+      { titre: "New Kid in Town", compositeur: "Don Henley, Glenn Frey, Jackson Browne", remarque: "Voix superposées et guitare douze cordes à gauche : test de polarisation du médium. Écoutez comme les chœurs s’installent progressivement autour de la voix principale sans jamais la couvrir." },
+      { titre: "Wasted Time", compositeur: "Don Henley, Glenn Frey", remarque: "Piano, cordes et batterie discrète : le médium le plus feutré de l’album. Écoutez la réverbération des cordes en fin de phrase — elle doit s’étendre sans jamais masquer la voix." },
+      { titre: "Life in the Fast Lane", compositeur: "Joe Walsh, Glenn Frey, Don Henley", remarque: "Guitares jumelées gauche-droite avec la basse au centre : leçon d’étagement en grande largeur. Écoutez la section finale — la montée doit rester cohérente, chaque guitare gardant son espace." },
+      { titre: "Victim of Love", compositeur: "Don Felder, Don Henley, Glenn Frey, J. D. Souther", remarque: "Le côté rock dur de l’album : riff de Felder, solo de Joe Walsh. Test des attaques saturées — la distorsion doit rester dense sans brouiller le chant." },
+      { titre: "Try and Love Again", compositeur: "Randy Meisner", remarque: "Le côté country feutré : guitares arpégées et basse posée. Écoutez la voix aiguë de Meisner — le médium doit rester doux même dans les sommets." },
     ],
   },
   {
@@ -313,6 +345,7 @@ const ALBUMS = [
     annee: "1977 (CD dès 1984 ; édition 2004)",
     genre: "Rock / pop",
     resume: "Un studio de Los Angeles (The Record Plant) à la croisée des voix féminines et masculines, produit par l’ensemble du groupe et Ken Caillat. Le CD « target » Warner (3010-2) reste remarquable ; l’édition remasterisée de 2004 (Warner/Rhino) ajoute des démos et une belle clarté.",
+    anecdote: "L’album a été enregistré alors que tous les couples du groupe se déchiraient : Buckingham et Nicks brouillés, McVie en pleine séparation, Fleetwood lui-même divorcé — les disputes nourrissaient les chansons, et les chansons nourrissaient les disputes. Pour « Songbird », Christine McVie a enregistré sa voix et son piano la nuit, dans un auditorium vide de Berkeley, assise sous un seul spot lumineux.",
     version: { label: "Warner Bros.", catalogue: "3010-2 (CD « target », 1984)", ean: "—", dr: 13, drNote: "Score approximatif pour les éditions historiques ; l’édition 2004 varie entre 11 et 13 selon les pistes." },
     identification: [
       "Référence 3010-2 : le fameux « target » Warner (face interne silver, gravure « Made in Germany by WEA Musik GmbH »).",
@@ -321,10 +354,13 @@ const ALBUMS = [
       "Vérifier la matrice + SID ; le « target » n’a pas de SID et son anneau interne est lisse.",
     ],
     pistes: [
-      { titre: "The Chain", compositeur: "Nicks, Buckingham, McVie, McVie, Fleetwood", remarque: "La montée du tremolo à la basse est un test culte de pression sur les enceintes ; voix superposées droite-gauche." },
-      { titre: "Dreams", compositeur: "Stevie Nicks", remarque: "Soirée de percussions douces et voix tenue ; le jeu du kick sous le chant ; équilibre avant-arrière exemplaire." },
-      { titre: "Go Your Own Way", compositeur: "Lindsey Buckingham", remarque: "Guitares doublées très serrées ; test de la séparation des plans médium-aigu." },
-      { titre: "Songbird", compositeur: "Christine McVie", remarque: "Piano et voix enregistrés nuitamment dans un studio vide : leçon de la pureté du registre piano-voix." },
+      { titre: "The Chain", compositeur: "Nicks, Buckingham, McVie, McVie, Fleetwood", remarque: "Le seul morceau crédité au groupe entier : la montée du tremolo à la basse est un test culte de pression sur les enceintes. Écoutez les voix superposées droite-gauche puis l’explosion — le grave doit creuser sans jamais gonfler." },
+      { titre: "Dreams", compositeur: "Stevie Nicks", remarque: "Percussions douces et voix tenue : le jeu du kick sous le chant, équilibre avant-arrière exemplaire. Écoutez comme la grosse caisse frappe en profondeur sans jamais gêner la voix — un test de séparation grave-médium culte." },
+      { titre: "Go Your Own Way", compositeur: "Lindsey Buckingham", remarque: "Guitares doublées très serrées, batterie martelée : test de la séparation des plans médium-aigu. Les arpèges en miroir doivent rester lisibles même quand tout le monde jouera fort." },
+      { titre: "Songbird", compositeur: "Christine McVie", remarque: "Piano et voix enregistrés nuitamment dans un auditorium vide : leçon de pureté du registre piano-voix. Écoutez le silence autour — la petite salle doit être perceptible, jamais confuse." },
+      { titre: "Second Hand News", compositeur: "Lindsey Buckingham", remarque: "Le côté énergique folk-pop : guitares doublées à gauche et droite, voix en superposition. Test de la note de fond — les couches de guitare doivent rester nettes, sans bave dans les aigus." },
+      { titre: "You Make Loving Fun", compositeur: "Christine McVie", remarque: "Clavinet et basse funky : le côté dansant de l’album. Écoutez le clavier stratifié au-dessus de la basse — la ligne de basse doit rester bien campée, centrale et franche." },
+      { titre: "Gold Dust Woman", compositeur: "Stevie Nicks", remarque: "Le grand disque de fin nocturne : harpe, voix fantomatiques, effet de réverbe étale. Écoutez comme la voix flotte — dans un bon pressage, elle garde son corps même au plus creux de la réverbe." },
     ],
   },
   {
@@ -334,6 +370,7 @@ const ALBUMS = [
     annee: "2002 (CD : Blue Note)",
     genre: "Jazz vocal / piano-pop",
     resume: "Produit par Craig Street et Arif Mardin, enregistré à Sear Sound et Sorcerer Sound (New York) : voix feutrée au plus près, piano feutré, discret, batterie en brushes. Un des disques les plus auditionnés pour juger le lien vocal sur un système.",
+    anecdote: "Norah Jones est la fille du joueur de sitar Ravi Shankar — une filiation connue tardivement, soigneusement tue par la communication du disque. Sorti discrètement en 2002, le disque a explosé par bouche-à-oreille jusqu’à 8 Grammy l’année suivante et plus de 27 millions d’exemplaires vendus.",
     version: { label: "Blue Note (EMI)", catalogue: "7243 5 32080 2 0 (CD original, 2002)", ean: "724353208020", dr: 12, drNote: "Score DR constaté sur l’édition standard ; le master est volontairement intime (peu de crêtes), plus « doux » que dynamique." },
     identification: [
       "Référence 7243 5 32080 2 0 imprimée sur le dos et la face interne ; « Made in the EU » fréquent sur les presses européennes.",
@@ -342,11 +379,12 @@ const ALBUMS = [
       "Matrice + SID à recopier : les rééditions post 2010 affichent des codes ifpi différents.",
     ],
     pistes: [
-      { titre: "Don’t Know Why", compositeur: "Jesse Harris", remarque: "Guitare discrète et voix droite au centre : test de Focus central et de respiration du souffle de micro." },
-      { titre: "Come Away with Me", compositeur: "Norah Jones", remarque: "Piano feutré puis voix en filigrane ; le silence autour du piano est un test de plancher de bruit." },
-      { titre: "Cold, Cold Heart", compositeur: "Hank Williams (reprise)", remarque: "Le clin d’œil country : basse Ron Carter discrète ; un test de tenue et de timbre du grave." },
-      { titre: "The Nearness of You", compositeur: "Hoagy Carmichael, Ned Washington", remarque: "Guitare nylon et voix : leçon de la pureté du registre piano-voix au plus bas volume d’écoute." },
-      { titre: "Shoot the Moon", compositeur: "Norah Jones", remarque: "Ambiance nocturne, frottements de mallettes ; un test de détail fin dans les basses fréquences." },
+      { titre: "Don’t Know Why", compositeur: "Jesse Harris", remarque: "Le test de voix au centre : guitare discrète et voix droite au milieu de l’image. Écoutez le souffle du micro — sur un beau pressage, il fait partie de la musique, jamais un défaut." },
+      { titre: "Come Away with Me", compositeur: "Norah Jones", remarque: "Le titre-sigle : piano feutré puis voix en filigrane. Le silence autour du piano est un test de plancher de bruit — il doit rester imperturbable à fort volume." },
+      { titre: "Cold, Cold Heart", compositeur: "Hank Williams (reprise)", remarque: "Le clin d’œil country : basse Ron Carter discrète. Un test de tenue et de timbre du grave — la note filée de la contrebasse doit garder son corps jusqu’au bout." },
+      { titre: "The Nearness of You", compositeur: "Hoagy Carmichael, Ned Washington", remarque: "Guitare nylon et voix : leçon de pureté du registre piano-voix au plus bas volume d’écoute. Si la voix se brouille à faible niveau, c’est la chaîne qui dort." },
+      { titre: "Nightingale", compositeur: "Lee Alexander", remarque: "Le côté jazz feutré : trio complet derrière la voix. Écoutez le médium de la guitare — elle doit rester boisée, jamais métallique." },
+      { titre: "Seven Years", compositeur: "Lee Alexander", remarque: "Le côté feutré et Old Continent : voix très intime, arrangement minimal. Test du silence — les fonds de l’album doivent rester d’un noir profond, sans hiss visible." },
     ],
   },
   {
@@ -356,6 +394,7 @@ const ALBUMS = [
     annee: "2001 (CD : Verve)",
     genre: "Jazz vocal",
     resume: "Produit par Tommy LiPuma, avec un quintette d’élite et des cordes orchestrées par Claus Ogerman : la voix de Krall très proche, un piano étoffé, une orchestration ample. Le disque se place régulièrement en test vivant des enceintes.",
+    anecdote: "Claus Ogerman, l’arrangeur de référence de Bill Evans et d’Antônio Carlos Jobim, signe ici les vastes plages de cordes du disque — une collaboration rare pour un album de jazz vocal. L’équipe est de choc : Tommy LiPuma à la production, Christian McBride à la basse, Anthony Wilson à la guitare.",
     version: { label: "Verve", catalogue: "065 588-2 (CD, 2001)", ean: "—", dr: 12, drNote: "Score DR modeste (master « sophistiqué » à large bande) ; la clarté du master reste superbe malgré un aplomb modéré." },
     identification: [
       "Réf. 065 588-2 (Verve/Universal Europe) ; version US : 314 549 803-2 ; les deux partagent le même master.",
@@ -364,10 +403,12 @@ const ALBUMS = [
       "Matrice à recopier : catalogue + code d’usine (DADC, Sonopress…) pour reconnaître les réimpressions.",
     ],
     pistes: [
-      { titre: "The Look of Love", compositeur: "Burt Bacharach, Hal David", remarque: "La star de l’album : voix très proche, trombone sourd et cordes étalées ; test ultime de la chaleur du médium." },
-      { titre: "Cry Me a River", compositeur: "Arthur Hamilton", remarque: "Piano latin et basse charnue — mise en scène serrée et nette ; un test de séparation de la basse et de la batterie." },
-      { titre: "Besame Mucho", compositeur: "Consuelo Velázquez", remarque: "La voix la plus intime de l’album cumulée aux graves : ambiance diffuse, trombone discret ; grande leçon d’ampleur." },
-      { titre: "S’Wonderful", compositeur: "George & Ira Gershwin", remarque: "Guitare discrète et basse : un test de tempo et du timbre du piano feutré." },
+      { titre: "The Look of Love", compositeur: "Burt Bacharach, Hal David", remarque: "La star de l’album : voix très proche, trombone sourd et cordes étalées. Test ultime de la chaleur du médium — les cordes doivent envelopper sans jamais écraser la voix." },
+      { titre: "Cry Me a River", compositeur: "Arthur Hamilton", remarque: "Piano latin et basse charnue : mise en scène serrée et nette. Test de séparation entre la basse et la batterie — chaque frappe doit rester distincte." },
+      { titre: "Besame Mucho", compositeur: "Consuelo Velázquez", remarque: "La voix la plus intime de l’album cumulée aux graves : ambiance diffuse, trombone discret. Une leçon d’ampleur — la voix doit garder son centre malgré l’orchestre." },
+      { titre: "S’Wonderful", compositeur: "George & Ira Gershwin", remarque: "Guitare discrète et basse : un test de tempo et du timbre du piano feutré. Écoutez le swing discret — la mise en place doit rester souple sans jamais traîner." },
+      { titre: "Mad About the Boy", compositeur: "Noël Coward", remarque: "Le côté feutré-cabaret : cordes en sourdine et voix au creux de l’oreille. Test de la douceur extrême — le médium doit rester charnu même à volume très réduit." },
+      { titre: "Perhaps, Perhaps, Perhaps", compositeur: "Osvaldo Farrés", remarque: "Le grand disque de séduction latine : percussions douces et cordes dansantes. Les percussions doivent garder leur lettre — nettes, jamais sèches." },
     ],
   },
   {
@@ -377,6 +418,7 @@ const ALBUMS = [
     annee: "1988 (CD : Elektra)",
     genre: "Folk",
     resume: "Un disque réalisé en 8 semaines, produit par David Kershenbaum : guitare acoustique au plus près, voix sans filtre, basse et batterie discrètes. Sa dynamique étendue en a fait un classique des démonstrations, notamment « Fast Car ».",
+    anecdote: "Repérée par hasard par l’étudiant et futur producteur Brian Koppelman, Tracy Chapman signe chez Elektra. Puis, en juin 1988, appelée à combler un temps mort au concert hommage à Nelson Mandela à Wembley, elle joue « Fast Car » seule avec sa guitare devant 72 000 personnes et des centaines de millions de téléspectateurs — sa carrière décolle du jour au lendemain.",
     version: { label: "Elektra", catalogue: "9 60774-2 (CD original, 1988)", ean: "075596077428", dr: 14, drNote: "Score DR élevé pour un disque de son époque ; la version remcelée est compressée et à éviter absolument." },
     identification: [
       "Référence « 9 60774-2 » (Elektra US) ; réimpression allemande : 7559-60774-2 (« Made in W.-Germany by PolyGram » sur les premières).",
@@ -385,10 +427,12 @@ const ALBUMS = [
       "Comme toujours : recopier matrix + SID pour différencier le pressage original des rééditions.",
     ],
     pistes: [
-      { titre: "Fast Car", compositeur: "Tracy Chapman", remarque: "Guitare percussive à l’intro, basse cyclope en dessous ; test célèbre du médium vocal et de la tenue du grave répétitif." },
-      { titre: "Talkin’ Bout a Revolution", compositeur: "Tracy Chapman", remarque: "Deux guitares superposées gauche-droite ; test de définition de l’attaque des cordes." },
-      { titre: "Baby Can I Hold You", compositeur: "Tracy Chapman", remarque: "Pièce intime de guitare et voix ; la sibilance est maîtrisée : test subtil du traitement vocal." },
-      { titre: "Behind the Wall", compositeur: "Tracy Chapman", remarque: "A cappella unique : rien ne masque la chaîne — un des plus sévères tests de timbre vocal du répertoire." },
+      { titre: "Fast Car", compositeur: "Tracy Chapman", remarque: "Le morceau-symbole du disque : guitare percussive à l’intro, basse cyclope en dessous. Écoutez le médium vocal impassible et la tenue du grave répétitif — c’est le test classique des magasins hi-fi, à juste titre." },
+      { titre: "Talkin’ Bout a Revolution", compositeur: "Tracy Chapman", remarque: "Deux guitares superposées gauche-droite : test de définition de l’attaque des cordes. Écoutez comme les deux plans s’imbriquent — chaque grattage doit rester localisé dans son canal." },
+      { titre: "Baby Can I Hold You", compositeur: "Tracy Chapman", remarque: "Pièce intime de guitare et voix : la sibilance est maîtrisée. Test du traitement vocal — la voix doit être franche sans jamais devenir mordante." },
+      { titre: "Behind the Wall", compositeur: "Tracy Chapman", remarque: "A cappella intégral : rien ne masque la chaîne. Un des plus sévères tests de timbre vocal du répertoire CD — la moindre coloration est immédiatement démasquée." },
+      { titre: "Across the Lines", compositeur: "Tracy Chapman", remarque: "Le côté grave et politique : guitare en ostinato, batterie discrète. Écoutez le contraste entre la douceur du timbre et la sévérité du propos — la voix doit rester au premier plan, sans excavation." },
+      { titre: "Mountains o’ Things", compositeur: "Tracy Chapman", remarque: "Le grand disque d’orchestration discrète : cordes posées en fond, congas légers. Test de l’équilibre folk-orchestre — les cordes doivent habiller sans jamais alourdir." },
     ],
   },
   {
@@ -398,6 +442,7 @@ const ALBUMS = [
     annee: "1992 (CD : Sony Masterworks)",
     genre: "Classique croisé / vocal & violoncelle",
     resume: "Le duo célébrissime : violoncelle de Yo-Yo Ma et voix « octuor » de Bobby McFerrin, produits par Steven Epstein, enregistrés en 4 jours. Tenues des notes, silences, grain du violoncelle : une profondeur de restitution souvent encore inégalée.",
+    anecdote: "Bobby McFerrin peut imiter à lui seul un quatuor à cordes entier avec sa gorge ; ici, il superpose ses voix autour du violoncelle de Yo-Yo Ma. Le duo est né d’une rencontre en l’honneur de Leonard Bernstein en 1988, et l’album fut enregistré en quatre jours à peine : la spontanéité du disque est réelle.",
     version: { label: "Sony Masterworks", catalogue: "SK 48207 (CD, 1992)", ean: "—", dr: 14, drNote: "Score approximatif ; le vrai point fort est la propreté du studio, pas la dynamique crête." },
     identification: [
       "Réf. SK 48207 (Sony Classical) ; « DDD » en interne ; ingénieur du son Chris Tergesen, mastering Bud Graham.",
@@ -406,11 +451,12 @@ const ALBUMS = [
       "Matrice à recopier : catalogue + code d’usine (DADC, Sony Music Japan…) pour dater l’exemplaire.",
     ],
     pistes: [
-      { titre: "Hush Little Baby", compositeur: "Traditionnel (arr. Bobby McFerrin)", remarque: "Voix et violoncelle en étroite collaboration ; un test de résolution et de chaleur entre voix et violoncelle." },
-      { titre: "Vocalise, Op. 34 no 14", compositeur: "Sergueï Rachmaninov", remarque: "La star de l’album : ligne vocale suspendue, tenue du violoncelle et souffle voilé ; grande leçon de sustain et de médium." },
-      { titre: "Stars", compositeur: "Bobby McFerrin", remarque: "Pièce la plus célébrée du disque : les voix superposées et le violoncelle en étage, détendue et grandiose ; un test d’image et de séparation." },
-      { titre: "Air (Suite No. 3 en ré BWV 1068)", compositeur: "Johann Sebastian Bach", remarque: "L’Air de la suite en ré en miniature orchestrale : ambiance suspendue, cordes aériennes ; grande leçon d’ampleur." },
-      { titre: "Flight of the Bumblebee", compositeur: "Nikolaï Rimski-Korsakov", remarque: "Virtuosité effrénée : les passages rapides pour tester la rapidité de rendu et la tenue des transitoires." },
+      { titre: "Hush Little Baby", compositeur: "Traditionnel (arr. Bobby McFerrin)", remarque: "L’ouverture bétonne la complicité : voix et violoncelle alternent puis s’emmêlent. Écoutez comme les deux timbres se répondent phrase par phrase — un test de résolution des médiums les plus proches." },
+      { titre: "Vocalise, Op. 34 no 14", compositeur: "Sergueï Rachmaninov", remarque: "La star de l’album : ligne vocale suspendue, tenue du violoncelle, souffle voilé. Grande leçon de sustain et de médium — les vibrations longues ne doivent jamais trembler puis faiblir." },
+      { titre: "Stars", compositeur: "Bobby McFerrin", remarque: "Le morceau le plus célèbré du disque : voix superposées et violoncelle en étage. Test d’image et de séparation — chaque couche vocale doit avoir sa place dans l’espace, sans brouillage." },
+      { titre: "Air (Suite No. 3 en ré BWV 1068)", compositeur: "Johann Sebastian Bach", remarque: "L’Air de Bach en miniature orchestrale : ambiance suspendue, cordes aériennes. Grande leçon d’ampleur — la ligne de McFerrin doit flotter au-dessus du violoncelle comme un ruban." },
+      { titre: "Musette (BWV Anh. 126)", compositeur: "Johann Sebastian Bach", remarque: "Le grand disque de courtes pièces : l’échange est vif, presque badin. Test des transitoires courts — chaque reattaque doit être franche sans jamais durcir." },
+      { titre: "Hoedown!", compositeur: "Aaron Copland", remarque: "Le côté folk américain : rythmes effrénés, voix percussives, violoncelle en ostinato. Test de la rapidité de rendu — les passages rapides ne doivent jamais se télescoper." },
     ],
   },
   {
@@ -420,6 +466,7 @@ const ALBUMS = [
     annee: "1981 (CD : Sony SM3K 52619)",
     genre: "Classique (piano)",
     resume: "Le second enregistrement des Variations par Gould, 26 ans après le premier : relecture plus calme, plus intériorisée. Techniquement, un piano Steinway capté de très près, sans brillance excessive : un disque de démonstration du registre médium-aigu et des silences.",
+    anecdote: "Gould avait abandonné la scène en 1964 pour ne vivre que du studio. La version 1981, captée en numérique naissant, fut sa dernière : il meurt d’un accident vasculaire à 50 ans, quelques semaines après la sortie du disque. Détail culte pour l’écoute : on l’entend fredonner en jouant — une imperfection assumée, devenue la signature de tous ses enregistrements.",
     version: { label: "Sony Classical", catalogue: "SM3K 52619 (coffret 3 CD « The Glenn Gould Edition », 1992)", ean: "—", dr: 16, drNote: "Score DR constant et élevé sur les éditions ; l’enregistrement dérivé de master numérique (ADR) des années 80 bénéficie de remasters Sony/DSD qui le rajeunissent." },
     identification: [
       "Coffret SM3K 52619 (« The Glenn Gould Edition ») : 3 CD dont CD extra d’interviews/archives ; réf. interne 52619.",
@@ -428,14 +475,16 @@ const ALBUMS = [
       "Matrices et SID à recopier : catalogue + code d’usine (DADC, Sony Music Japan…) pour dater l’exemplaire.",
     ],
     pistes: [
-      { titre: "Aria", compositeur: "J. S. Bach (clavecin ; interprét. Glenn Gould)", remarque: "L’Aria originale, la tenue des notes répétées : un test classique de résolution du piano et de respiration du grave." },
-      { titre: "Variation 13", compositeur: "J. S. Bach", remarque: "L’intériorisme de Gould ; test de la résolution du médium dans le piano acoustique." },
-      { titre: "Variation 25", compositeur: "J. S. Bach", remarque: "La « variation noire », la plus longue : leçon de tension subtile et d’homogénéité tonale." },
-      { titre: "Aria da capo", compositeur: "J. S. Bach", remarque: "Le retour de l’Aria après le voyage : même musique, effet transformé ; une leçon d’ampleur et de recueillement." },
+      { titre: "Aria", compositeur: "J. S. Bach", remarque: "L’ouverture bétonne l’esthétique 1981 : chaque note tenue avec une intention posée, ni urgence ni relâchement. Écoutez le fredonnement discret de Gould au-dessus du piano — sur un beau pressage, il est présent sans jamais distraire." },
+      { titre: "Variation 1", compositeur: "J. S. Bach", remarque: "Le grand disque d’allant : main droite en relief, main gauche discrète mais bien campée. Le test du toucher — la dynamique entre les deux mains doit rester lisible à tout volume." },
+      { titre: "Variation 13", compositeur: "J. S. Bach", remarque: "L’intériorisme de Gould : mélodie en filigrane, silences assumés. Test de la résolution du médium — le piano doit garder son corps dans les pianissimes, sans devenir cotonneux." },
+      { titre: "Variation 25", compositeur: "J. S. Bach", remarque: "La « variation noire », la plus longue et la plus sombre du cycle : leçon de tension subtile et d’homogénéité tonale. Écoutez comme les graves roulent sous les chromatismes — sans jamais brouiller." },
+      { titre: "Variation 30 (quodlibet)", compositeur: "J. S. Bach", remarque: "Le côté badin du cycle : deux chansons populaires de l’époque superposées aux voix de Bach. Test de la polyphonie débridée — chaque ligne doit rester distincte jusque dans la gaieté." },
+      { titre: "Aria da capo", compositeur: "J. S. Bach", remarque: "Le retour de l’Aria après le voyage : même musique, effet transformé. Une leçon d’ampleur et de recueillement — le silence final doit durer, peser, et rester noir." },
     ],
   },
 ];
 
-const APP_VERSION = "1.2.0";
+const APP_VERSION = "1.3.0";
 const APP_BUILD_DATE = "2026-11-24";
-const APP_BUILD_TIME = "15:05";
+const APP_BUILD_TIME = "16:00";

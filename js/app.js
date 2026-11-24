@@ -102,6 +102,7 @@ function ficheHTML(a) {
       "<ul class=\"identification\">" +
         a.identification.map(function (i) { return "<li>" + esc(i) + "</li>"; }).join("") +
       "</ul>" +
+      (a.anecdote ? "<div class=\"anecdote\"><span class=\"anecdote-titre\">Anecdote</span>" + esc(a.anecdote) + "</div>" : "") +
     "</section>" +
     "<section class=\"partie\">" +
       "<h3>Partie 2 — Les morceaux remarquables</h3>" +
