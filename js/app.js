@@ -176,9 +176,8 @@ function renderIndex(nom) {
       });
     });
   }
-  document.querySelectorAll("#onglets-index button").forEach(function (b) {
-    b.classList.toggle("actif", b.getAttribute("data-index") === nom);
-  });
+  const selIndex = document.getElementById("choix-index");
+  if (selIndex && selIndex.value !== (nom || "")) selIndex.value = nom || "";
 }
 
 function filtrerParIds(ids) {
@@ -227,10 +226,9 @@ function init() {
   document.getElementById("champ-recherche").addEventListener("input", renderFiches);
   document.getElementById("mode-recherche").addEventListener("change", renderFiches);
 
-  document.querySelectorAll("#onglets-index button").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      renderIndex(btn.getAttribute("data-index"));
-    });
+  const selIndex = document.getElementById("choix-index");
+  selIndex.addEventListener("change", function () {
+    renderIndex(selIndex.value || null);
   });
 
   majStatsAvec(ALBUMS);

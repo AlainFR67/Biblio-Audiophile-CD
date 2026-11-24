@@ -8,7 +8,7 @@ Fiches récapitulatives des meilleurs albums CD du point de vue **audiophile** e
 - **Partie 1 de chaque fiche — la version** : score DR (avec note explicative), éditeur, référence catalogue, code EAN (quand il est confirmé), et les détails qui permettent d’identifier le pressage (mastering, usine, matrice, codes SID, éditions collatérales, packaging…).
 - **Partie 2 — les morceaux remarquables** : quels titres sont extraordinaires par leur mixage, leur scène sonore ou tout autre point intéressant à l’écoute (avec le compositeur de chacun).
 - **Recherche** par référence catalogue, code EAN, nom de morceau, compositeur, artiste/album — ou sur tout champ à la fois.
-- **Quatre index cliquables** : références catalogue, codes EAN, morceaux, compositeurs (avec compteur de fiches).
+- **Quatre index accessibles via une liste déroulante** : références catalogue, codes EAN, morceaux, compositeurs (avec compteur de fiches) — compact sur mobile (panneau à hauteur limitée).
 
 ## Utilisation
 
@@ -29,4 +29,5 @@ js/app.js       rendu, recherche par mode, index cliquables
 
 ## Historique des versions
 
+- **1.1.0** — Les quatre index (réf. catalogue, EAN, morceaux, compositeurs) passent d’une rangée de boutons à une liste déroulante : l’interface est plus compacte, notamment sur téléphone (panneau d’index à hauteur limitée et défilement interne).
 - **1.0.0** — Première version : les 20 fiches de référence audiophile (rock, jazz, classique, folk, world), recherche multi-modes, 4 index cliquables, scores DR avec avertissement.

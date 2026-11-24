@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biblio-Audiophile-CD — fiches des meilleurs CD</title>
   <meta name="description" content="Fiches récapitulatives des meilleurs albums CD du point de vue audiophile et interprétation : références, score DR, morceaux remarquables.">
-  <link rel="stylesheet" href="css/style.css?v=1.0.0">
+  <link rel="stylesheet" href="css/style.css?v=1.1.0">
 </head>
 <body>
   <header>
@@ -25,11 +25,15 @@
         <option value="artiste">Artiste / album</option>
       </select>
     </div>
-    <div class="onglets-index" id="onglets-index">
-      <button data-index="catalogue">📇 Index des réf. catalogue</button>
-      <button data-index="ean">🔢 Index des codes EAN</button>
-      <button data-index="morceaux">🎵 Index des morceaux</button>
-      <button data-index="compositeurs">🎼 Index des compositeurs</button>
+    <div class="ligne-index">
+      <label for="choix-index" class="etiquette-index">📑 Index :</label>
+      <select id="choix-index" aria-label="Choisir un index">
+        <option value="">— Choisir un index —</option>
+        <option value="catalogue">📇 Réf. catalogue</option>
+        <option value="ean">🔢 Codes EAN</option>
+        <option value="morceaux">🎵 Morceaux</option>
+        <option value="compositeurs">🎼 Compositeurs</option>
+      </select>
     </div>
     <p class="stats" id="stats"></p>
   </nav>
@@ -45,7 +49,7 @@
     <p class="note-source">Scores DR approximatifs, d’après la Dynamic Range Database (ils varient selon le pressage) et références à recouper avec vos exemplaires.</p>
   </footer>
 
-  <script src="js/data.js?v=1.0.0"></script>
-  <script src="js/app.js?v=1.0.0"></script>
+  <script src="js/data.js?v=1.1.0"></script>
+  <script src="js/app.js?v=1.1.0"></script>
 </body>
 </html>
